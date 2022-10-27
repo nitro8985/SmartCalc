@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{SmartCalc v2.0}
+\author{aremedio@student.21-school.ru}
+\date{October 2022}
+
+\begin{document}
+\maketitle
+
+\section{General}
+SmartCalc is a GUI application for calculating infix expressions. Its functionality allows to build graphs f(x) and calculate loan payments.
+\section{Installation}
+You can build the programm right in the current directory from terminal by running \textbf{make} , then run it as \textbf{./calc}.
+Default installation: \textbf{make install}.
+To install it to custom directory run \textbf{./install.sh -t 'dirname'}.
+To uninstall use \textbf{make uninstall} or \textbf{./unistall -f 'dirname'}.
+
+\section{Usage}
+The window of the application contains three tabs.
+The first one is calculator itself. There are entry line (copy/paste and keyboard input allowed), a slider defining the prescision of result and clickable buttons.
+The second tab is for plotting graphs. Paste or enter f(x) then click "draw" button or press enter. You can adjust domain from 1 to 1000000.
+The third is for calculating loan payments. Enter credit sum, percent and term, choose payment calculation method then click "calculate".
+
+\end{document}
